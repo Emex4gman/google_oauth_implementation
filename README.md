@@ -31,3 +31,6 @@ module.exports = {
 }
 
 ```
+
+## Generate your google+ api data
+https://console.cloud.google.com/
