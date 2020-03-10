@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oauth Profile</title>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAuth App</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/"> Home</a></li>
+        <% if (user) { %>
+        <li><a href="/auth/logout"> Logout</a></li>
+        <li><a href="/profile"> Profile</a></li>
+        <% } else { %>
+        <li><a href="/auth/login"> Login</a></li>
+        <% } %>
+      </ul>
+    </nav>
+
+    <header>
+      <h2>WELCOME TO YOUR OAUTH PROFILE, <%= user.username%></h2>
+      <img src="<%= user.thumbnail %>" alt="" width="150" />
+      <img src="" alt="" />
+    </header>
+  </body>
+</html>
